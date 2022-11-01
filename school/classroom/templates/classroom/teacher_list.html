@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of all teachers is here: (ListView)</h1>
+    <ul>
+        {% for teacher in teacher_list %}
+        
+        <!-- <li><a href="/classroom/detail_teacher/{{teacher.id}}">{{teacher.first_name}} {{teacher.last_name}}</a></li> -->
+        <li><a href="/classroom/detail_teacher/{{teacher.id}}">{{teacher.first_name}} {{teacher.last_name}}</a>
+        
+        <ul>
+            <li><a href="/classroom/update_teacher/{{teacher.id}}/"> update</a></li></li>
+            <li><a href="/classroom/delete_teacher/{{teacher.id}}/"> delete</a></li></li>
+        </ul>
+            
+        {% endfor %}          
+    </ul>
+    <h2>Wanna create new?<br><a href="{% url "classroom:create_teacher" %}">click here</a></h2>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'catalog/index.html' %}
+
+
+{% block content %}
+    <h1>Your profile</h1>
+    <h2>Your books library in details below:</h2>
+    
+    {% for book in bookinstance_list %}
+        <p>{{book.book.title}} by {{book.book.author}}</p>
+    {% endfor %}
+        
+{% endblock content %}
+    

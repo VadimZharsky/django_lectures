@@ -1,0 +1,39 @@
+{% extends 'catalog/index.html' %}
+
+
+{% block content %}
+
+  {% if user.is_authenticated %}
+    <p>You are logged in</p>
+    <p>Welcome, {{user.get_username}}</p>
+
+    <div style="margin-right: 60%; margin-left: 1%; margin-top: 1%;" >
+      <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Books in Library</div>
+            </div>
+            <span class="badge rounded-pill"style="background-color: #815B5B;">{{num_books}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Book Instanses</div>
+            </div>
+            <span class="badge rounded-pill"style="background-color: #815B5B;">{{num_instances}}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Available</div>
+            </div>
+            <span class="badge rounded-pill"style="background-color: #815B5B;">{{num_instances_avail}}</span>
+          </li>
+        </ol>
+      </div>
+  {% else %}
+    <p>You're not logged in</p> 
+  {% endif %}
+  
+
+    
+{% endblock content %}
+    

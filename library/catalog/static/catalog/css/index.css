@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+.navitems{
+   color: #FFF8EA;
+   font-family: 'Island Moments', cursive;
+   font-weight: 400;
+   font-size: 28px;
+}
+
+.font_style1{
+   color: #FFF8EA;
+   font-family: 'Island Moments', cursive;
+   font-weight: 700;
+   font-size: 40px;
+   /* https://colorhunt.co/palette/fff8ea9e7676815b5b594545 */
+}

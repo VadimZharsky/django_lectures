@@ -1,0 +1,19 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    
+}
+#up{
+    text-align: center;
+    border: 10px solid green;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#down{
+    text-align: center;
+    border: 10px solid blue;
+    margin-left: 100px;
+    margin-right: 100px;
+}

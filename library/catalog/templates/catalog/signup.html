@@ -1,0 +1,12 @@
+{% extends 'catalog/index.html' %}
+
+
+{% block content %}
+        <h1>Register new user here</h1>
+        <form method="POST">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Sign up">
+        </form>
+{% endblock content %}
+    

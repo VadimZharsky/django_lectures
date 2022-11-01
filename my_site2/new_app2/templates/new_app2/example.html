@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'new_app2/example2.css' %}">
+
+<p class="duckid">{{date}}</p>
+<p class="duckid"><a href = "{% url 'new_app2:variable' %}">click here</a></p>
+<p class="duckid">your duck would be here:</p>
+<img src="{% static 'new_app2/duck1.png' %}"  width="150" alt = 'my image'/>
+
+{% endblock  %}
+
+

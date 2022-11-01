@@ -1,0 +1,18 @@
+
+BODY{
+    font-family: Aboreto, cursive;
+    font-size: 16px;
+    color:aqua ;
+}
+.divs{
+    
+    font-size:0.9em;
+    font-style: italic;
+    text-align: justify;
+}
+
+    
+#one{
+    background-color: blue;
+    color: aliceblue;
+}
