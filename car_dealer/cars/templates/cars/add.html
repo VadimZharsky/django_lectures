@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block added_css %}
+<link rel="stylesheet" href="{% static 'cars/css/add.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 id="tried">ADD.HTML</h1>
+    <img src="{% static 'cars/img/violet_car.png' %}" alt="My image" width="50">
+    <h2 class="container" >Add a new car to the database:</h2>
+    <form method="POST">
+      {% csrf_token %}
+        <div class="mb-3">
+          <label for="brand" class="form-label">Brand:</label>
+          <input type="text" class="form-control" id="brand" name="brand" style="background-color: #f1faee;">
+        </div>
+        <div class="mb-3">
+          <label for="year" class="form-label">Year:</label>
+          <input type="text" class="form-control" id="year" name="year" style="background-color: #f1faee;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="background-color: #1d3557; border-color: #1d3557; color:#f1faee ;">Submit</button>
+      </form>
+</div>
+{% endblock %}

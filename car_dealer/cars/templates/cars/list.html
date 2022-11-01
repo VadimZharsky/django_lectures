@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="list-group">
+    {% for car in all_cars %}
+    <button type="button" class="list-group-item list-group-item-action" style="background-color: #f1faee;">{{car.brand}} {{car.year}}</button>
+    {% endfor %}
+  </div>
+
+{% endblock %}

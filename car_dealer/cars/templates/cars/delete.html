@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block added_css %}
+<link rel="stylesheet" href="{% static 'cars/css/add.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 id="tried">DELETE.HTML</h1>
+    <h2 class="container" >Delete a car by ID(pk):</h2>
+        <form method="POST">
+          {% csrf_token %}
+            <div class="mb-3">
+              <label for="pk" class="form-label">ID (pk):</label>
+              <input type="text" class="form-control" id="pk" name="pk" style="background-color: #f1faee; margin-right: 5px;">
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #1d3557; border-color: #1d3557; color:#f1faee ;">Submit</button>
+          </form>
+</div>
+
+{% endblock %}
