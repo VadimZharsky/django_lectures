@@ -1,0 +1,30 @@
+
+
+body{
+    background-color:#D6D6D6;
+}
+.navbar-expand-lg{
+    background-color:transparent;
+    padding-top: 40px;
+}
+.navbar-brand{
+    position: relative;
+    /* width: 121.57px; */
+    /* height: 60px; */
+    padding-left: 107px;
+    padding-top: 16px;
+}
+.nav-item{
+    text-decoration: none;
+    font-size:20px;
+    font-family: Times New Roman;
+    line-height:20%;
+    text-transform: uppercase;
+}
+.nav-link{
+    color: black;
+}
+/* #navbarNav{
+    position: relative;
+    margin-left: 40vw; 
+}  */
