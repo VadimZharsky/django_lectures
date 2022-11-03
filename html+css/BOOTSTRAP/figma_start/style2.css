@@ -25,7 +25,7 @@ body{
 }
 .nav-link{
     color: black;
-    font-family: Times New Roman;
+    font-family: 'Times New Roman';
     line-height:300%;
     text-transform: uppercase;
     margin-right: 5vw;
