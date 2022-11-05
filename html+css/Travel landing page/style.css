@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sen:wght@700&display=swap');
+
+body{
+    /* background-color: #FAF8ED; */
+    background-color: #FAF8ED;
+}
+.navbar.navbar-expand-lg{
+    padding-top: 25px;
+}
+.navbar-brand{
+    margin-left: 124px;
+}
+.nav-link{
+    font-family: 'Poppins', serif;
+    color: #2E476B;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.nav-link.home-link
+{
+    margin-left: 50px;
+}
+.btn.btn-outline.btn-lg{
+    margin-right: 60px;
+    border-color: #F66F4D;
+    border-radius: 30px;
+    width: 170px;
+    height: 55px;
+    border-width: 2px;
+    font-family: 'Poppins', serif;
+    color: #F66F4D;
+
+}
+.btn.btn-outline.btn-lg:hover{
+    border: none;
+    color: #FAF8ED;
+    background-color: #f66f4d;          
+}
+.col.text-in-left{
+    padding-top: 92px;
+    padding-left: 11vw;
+}
+.main-text-upper{
+    text-align: left;
+    font-family: 'Sen', sans-serif;
+    color: #2D3134;
+    font-size: 6.2vw;
+    line-height: 6.3vw;
+}
+.main-text-lower{
+    margin-top: 28px;
+    font-family: 'Inter', sans-serif;
+    color: #5B5F62;
+    font-size: 1.35vw;
+    text-align: left;
+    line-height: 2vw;
+}
+.img579{
+    margin-top: -0.5vw;
+    margin-left: -2vw;
+    width: 40vw;
+}
+.image1{
+    position: absolute;
+    width: 533.75px;
+    left: 779px;
+    top: 112px; 
+}
+.searchbox{
+    position: absolute;
+}
+.where{
+    z-index: 1;
+    margin-left: 100px;
+    margin-top: 65px;
+}
